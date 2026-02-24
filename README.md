@@ -1,27 +1,22 @@
 # AI Agent Skills — Token Efficient Coder
 
-A specialized repository for AI agent skills aimed at optimizing coding interactions. This repository provides the **Token Efficient Coder** skill, which establishes definitive guidelines to minimize LLM token usage (input and output) when making code modifications.
+A specialized repository for AI agent skills aimed at optimizing coding interactions. This particular repository currently offers the **Token Efficient Coder** skill, which establishes definitive guidelines to minimize LLM token usage (input and output) when making code modifications.
 
-Compatible with Claude Code, GitHub Copilot, and other AI coding assistants that support skills.
-
-## Repository
-
-[https://github.com/artur282/Token-Efficient-Coder](https://github.com/artur282/Token-Efficient-Coder)
+Compatible with Claude Code, GitHub Copilot, and other AI coding assistants.
 
 ## Installation
 
-### Clone the Repository
-
-To get started, clone the repository to your local machine:
+### Add specific skill
 
 ```bash
-git clone https://github.com/artur282/Token-Efficient-Coder.git
-cd Token-Efficient-Coder
+# Add the token-efficient-coder skill
+npx skills add https://github.com/artur282/Token-Efficient-Coder.git
 ```
+*(If published via `npx skills`)* 
 
 ### Manual Installation
 
-Copy the skill to your project's skills directory:
+Copy to your project's skills directory:
 
 ```bash
 # Claude Code / local directory
@@ -43,7 +38,7 @@ cp -r skills/* ~/.copilot/skills/
 
 1. Create a new directory within `skills/<skill-name>/`.
 2. Write a `SKILL.md` following the provided YAML frontmatter.
-3. Keep token efficiency in mind!
+3. Keep tokens in mind!
 
 ## License
 
